@@ -1,19 +1,8 @@
 <script lang="ts">
-	import Button, { Label } from '@smui/button';
-	import Paper, { Title, Subtitle, Content } from '@smui/paper';
-
-	let clicked = 0;
 </script>
 
-<Paper>
-	<Title>Welcome to SvelteKit</Title>
-	<Content>
-		<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<a href="cards/addition">Addition</a>
 
-		<Button on:click={() => clicked++}>
-			<Label>Default</Label>
-		</Button>
+<a href="cards/multiplication">Multiplication</a>
 
-		{clicked}
-	</Content>
-</Paper>
+<a href="cards/both">Both</a>
