@@ -48,12 +48,19 @@
 </div>
 
 <div class="control">
-	<button class="home" on:click={() => goto('/')}>Home</button>
+	<button
+		class="home"
+		on:click={() => {
+			cardDb.Decks[$page.params.slug].correct = 0;
+			cardDb.Decks[$page.params.slug].incorrect = 0;
+			goto('/');
+		}}>Home</button
+	>
 </div>
 <div class="scores">
-	<span class="correct">{cardDb.Decks[$page.params.slug].correct}</span>
-	<span class="speed">{390 - cardDb.Decks[$page.params.slug].cards.length}</span>
-	<span class="missed">{cardDb.Decks[$page.params.slug].missed}</span>
+	<span class="correct">Correct: {cardDb.Decks[$page.params.slug].correct}</span>
+	<span class="speed">Speed: {390 - cardDb.Decks[$page.params.slug].cards.length}</span>
+	<span class="missed">Incorrect: {cardDb.Decks[$page.params.slug].missed}</span>
 </div>
 
 <style>
@@ -99,5 +106,6 @@
 	.scores span {
 		width: 30vw;
 		display: block;
+		text-align: center;
 	}
 </style>
