@@ -21,10 +21,6 @@ export abstract class Card {
 		return [-4, -3, -2, -1];
 	}
 
-	compare(card: Card): boolean {
-		return true;
-	}
-
 	update(score: number) {
 		this.score = score;
 	}
