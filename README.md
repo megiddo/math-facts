@@ -1,5 +1,9 @@
 # Math Facts
 
+See it in action here:
+
+https://math-facts.ninja
+
 ## A Spaced Repetition System for Arithmetic Math Facts
 
 This app is intended for daily use.
