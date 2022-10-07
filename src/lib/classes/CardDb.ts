@@ -9,13 +9,7 @@ import { Deck } from '$lib/classes/Deck';
 
 export class CardDb {
 	Decks: object;
-	/*
-	multiplication: Deck;
-	addition: Deck;
 
-	division: Deck;
-	subtraction: Deck;
-	*/
 	constructor() {
 		this.Decks = {};
 		const lscores: object = {};
