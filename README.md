@@ -1,8 +1,24 @@
 # Math Facts
 
-## A Spaced Repetition System for Arithmetic Math Factss
+## A Spaced Repetition System for Arithmetic Math Facts
 
 This app is intended for daily use.
+
+## Use
+
+Learner can choose Addition, Subtraction, Multiplication, or Division.
+
+They are expected to choose an answer quickly (within 5 seconds). Incorrect cards are marked in red and the learner may continue selecting cards until they get the right answer.
+
+The correctness and speed of answering for each card is stored in the browser and re-instated when visited again.
+
+## Scoring
+
+Three scores are presented:
+
+- Left (in green): total number correct answers for this session
+- Right (in red): total number of incorrect answers for this session
+- Middle (in black): a score representing both how many correct cards were answered and how quickly. The maximum score is 312 but requires that all the cards are answered in the minimum allowable time.
 
 ## Methodology
 
@@ -12,47 +28,12 @@ The answer is then scored based on correctness and response time, as:
 Incorrect Answer: 0
 Correct Answer Score: 5 - seconds
 
-The app sorts math facts into 4 buckets, as follows:
+Cards are then shuffled in the following way:
 
-Min(Round(Score on Last 4 presentations / 4), 4)
+Two decks of cards is built, where:
+ - Unseen cards are repeated 5 times in an unseen deck
+ - Seen cards are repeated Max(0, 5 - seconds to answer correctly) or 5 cards for each incorrect answer in a seen deck
+ - The unseen deck is duplicated until it's size is greater than the seen deck. For instance, if there are 3 unseen answers (15 cards) and 75 seen cards, then the unseen deck is duplicated 6 times (for a total of 90 cards)
+ - The unseen and seen decks are shuffled together
 
-The algorithm presents math facts from each bucket, randomly, with the following distribution:
-
-Bucket 0: 55%
-Bucket 1: 25%
-Bucket 2: 15%
-Bucket 3: 5%
-
-## Seeding
-
-Initial seeding is by first operand value / 4, such that
-
-1 op N is in bucket 0
-7 op N is bucket 2
-
-And so on
-
-## Selection & Ordering
-
-Use is broken up into sequences of 20 questions (11-5-3-1).
-
-A global sequence counter is stored and incremented for each sequence.
-
-Each time a card is presented, the current sequence counter is stored with the card.
-
-At the beginning of each sequence, the contents of each bucket are sorted by:
-
-```
-Sequence, ascending
-  Within in each sequence, shuffled randomly
-```
-
-For each Bucket N:
-
-```
-Take M values -> V
-  If Length(V) < M
-    Consider each Bucket N-1 ... N-n, requesting the balance of the cards to fill V
-  If Length(V) < M
-    Consider each Bucket N+1 ... N+n, requesting the balance of the cards to fill V
-```
+The top card is repeated. Based on the new information (answer), the deck is rebuilt and shuffled.
