@@ -1,5 +1,5 @@
 <script>
-	import { cards } from '../../lib/cards';
+	import { cards } from '$lib/cards';
 	import { createEventDispatcher } from 'svelte';
 
 	const answerSelectedEvent = createEventDispatcher();
