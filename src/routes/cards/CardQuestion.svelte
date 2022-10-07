@@ -1,5 +1,5 @@
 <script>
-	import { cards } from '../../lib/cards';
+	import { cards } from '$lib/cards';
 
 	export let terms = [1, 1];
 	export let operator = '&times;';
