@@ -35,6 +35,7 @@
 		"@capacitor/android": "^4.3.0",
 		"@capacitor/assets": "^1.0.10",
 		"@capacitor/core": "^4.3.0",
+		"@capacitor/ios": "^4.3.0",
 		"cordova-res": "^0.15.4"
 	}
 }
