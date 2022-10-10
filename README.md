@@ -59,5 +59,26 @@ Assets (icons)
 In dev container
 
 ```
-npx capacitor-assets generate --iconBackgroundColor '#ffffff' --splashBackgroundColor '#ffffff' --android
+npx capacitor-assets generate --iconBackgroundColor '#ffffff' --splashBackgroundColor '#ffffff'
+```
+
+### iOS
+
+In host (if no iOS target exists)
+
+```
+npx cap add ios
+```
+
+Build in dev container
+
+```
+npm run build
+```
+
+In host
+
+```
+npx cap sync
+npx cap open ios
 ```

@@ -72,6 +72,7 @@
 		display: block;
 		padding: 0.5em;
 		margin-bottom: 10vw;
+		color: black;
 	}
 	.answers {
 		display: flex;

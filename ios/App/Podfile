@@ -14,7 +14,7 @@ def capacitor_pods
 
 end
 
-target 'App' do
+target 'Math Facts' do
   capacitor_pods
   # Add your Pods here
 end
