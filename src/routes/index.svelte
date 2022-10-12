@@ -1,39 +1,69 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	const additionUrl = new URL('./assets/math facts addition.svg', import.meta.url).href;
+	const subtractionUrl = new URL('./assets/math facts subtraction.svg', import.meta.url).href;
+	const multiplicationUrl = new URL('./assets/math facts multiplication.svg', import.meta.url).href;
+	const divisionUrl = new URL('./assets/math facts division.svg', import.meta.url).href;
+
+	const mathFactsNinja = new URL('./assets/math facts logo.svg', import.meta.url).href;
 
 	export const prerender = true;
 </script>
 
-<h1>Math Facts</h1>
+<div class="content">
+	<div class="logo"><img src={mathFactsNinja} id="ninja-logo" alt="logo of a ninja" /></div>
 
-<div class="controls">
-	<button on:click={() => goto('cards/Addition')}>Addition</button>
+	<div class="controls">
+		<input
+			type="image"
+			on:click={() => goto('cards/Addition')}
+			src={additionUrl}
+			alt="Addition sign; click here to practice Addition."
+		/>
 
-	<button on:click={() => goto('cards/Subtraction')}>Subtraction</button>
+		<input
+			type="image"
+			on:click={() => goto('cards/Subtraction')}
+			src={subtractionUrl}
+			alt="Subtraction sign; click here to practice Subtraction."
+		/>
 
-	<button on:click={() => goto('cards/Multiplication')}>Multiplication</button>
+		<input
+			type="image"
+			on:click={() => goto('cards/Multiplication')}
+			src={multiplicationUrl}
+			alt="Multiplication sign; click here to practice Multiplication."
+		/>
 
-	<button on:click={() => goto('cards/Division')}>Division</button>
+		<input
+			type="image"
+			on:click={() => goto('cards/Division')}
+			src={divisionUrl}
+			alt="Division sign; click here to practice Division."
+		/>
+	</div>
 </div>
 
 <style>
-	.controls {
+	.content {
+		display: flex;
+		justify-content: space-evenly;
+		flex-direction: column;
+		height: 100vh;
+	}
+	.controls,
+	.logo {
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
 	}
-	h1 {
-		text-align: center;
-		font-size: 8vh;
+	.controls > input {
+		flex: 1 0 40%;
+		max-width: 40vw;
+		max-height: 20vh;
 	}
-	button {
-		width: 90vw;
-		font-size: 4vh;
-		margin: 1vw;
-		background-color: gold;
-		display: block;
-		padding: 0.5em;
-		margin-bottom: 5vw;
-		color: black;
+	#ninja-logo {
+		max-width: 300px;
+		max-height: 30vh;
 	}
 </style>

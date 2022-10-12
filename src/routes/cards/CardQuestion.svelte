@@ -11,5 +11,7 @@
 	h1 {
 		font-size: 10vh;
 		text-align: center;
+		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		color: #22262aff;
 	}
 </style>
