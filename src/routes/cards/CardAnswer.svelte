@@ -32,6 +32,7 @@
 		font-size: 6vh;
 		margin: 1vw;
 		position: relative;
+		color: black;
 	}
 	.highlighted {
 		background-color: hotpink !important;

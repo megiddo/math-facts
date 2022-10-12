@@ -34,5 +34,6 @@
 		display: block;
 		padding: 0.5em;
 		margin-bottom: 5vw;
+		color: black;
 	}
 </style>

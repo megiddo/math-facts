@@ -35,9 +35,50 @@ Correct Answer Score: 5 - seconds
 Cards are then shuffled in the following way:
 
 Two decks of cards are built, where:
- - Unseen cards are repeated 5 times in an unseen deck
- - Seen cards are repeated Max(0, 5 - seconds to answer correctly) or 5 cards for each incorrect answer in a seen deck
- - The unseen deck is duplicated until it's size is greater than the seen deck. For instance, if there are 3 unseen answers (15 cards) and 75 seen cards, then the unseen deck is duplicated 6 times (for a total of 90 cards)
- - The unseen and seen decks are shuffled together
+
+- Unseen cards are repeated 5 times in an unseen deck
+- Seen cards are repeated Max(0, 5 - seconds to answer correctly) or 5 cards for each incorrect answer in a seen deck
+- The unseen deck is duplicated until it's size is greater than the seen deck. For instance, if there are 3 unseen answers (15 cards) and 75 seen cards, then the unseen deck is duplicated 6 times (for a total of 90 cards)
+- The unseen and seen decks are shuffled together
 
 The top card is repeated. Based on the new information (answer), the deck is rebuilt and shuffled.
+
+## Build
+
+### Android
+
+In dev container
+
+```
+npm run build
+npx cap sync
+```
+
+Assets (icons)
+
+In dev container
+
+```
+npx capacitor-assets generate --iconBackgroundColor '#ffffff' --splashBackgroundColor '#ffffff'
+```
+
+### iOS
+
+In host (if no iOS target exists)
+
+```
+npx cap add ios
+```
+
+Build in dev container
+
+```
+npm run build
+```
+
+In host
+
+```
+npx cap sync
+npx cap open ios
+```

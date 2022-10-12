@@ -58,9 +58,9 @@
 	>
 </div>
 <div class="scores">
-	<span class="correct">Correct: {cardDb.Decks[$page.params.slug].correct}</span>
-	<span class="speed">Speed: {390 - cardDb.Decks[$page.params.slug].cards.length}</span>
-	<span class="missed">Incorrect: {cardDb.Decks[$page.params.slug].missed}</span>
+	<span class="correct">Correct: <br />{cardDb.Decks[$page.params.slug].correct}</span>
+	<span class="speed">Speed: <br />{390 - cardDb.Decks[$page.params.slug].cards.length}</span>
+	<span class="missed">Incorrect: <br />{cardDb.Decks[$page.params.slug].missed}</span>
 </div>
 
 <style>
@@ -72,6 +72,7 @@
 		display: block;
 		padding: 0.5em;
 		margin-bottom: 10vw;
+		color: black;
 	}
 	.answers {
 		display: flex;
@@ -81,12 +82,12 @@
 	}
 	.control {
 		position: absolute;
-		bottom: 10vh;
+		bottom: 12vh;
 		text-align: center;
 		display: block;
 		width: 50vw;
 		left: 25vw;
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 	.correct {
 		color: forestgreen;
@@ -96,12 +97,13 @@
 	}
 	.scores {
 		position: absolute;
-		bottom: 1vh;
+		bottom: 1.5vh;
 		text-align: center;
-		font-size: 2em;
+		font-size: 1.5em;
 		display: flex;
 		justify-content: space-between;
-		width: 90vw;
+		width: 100%;
+		margin: 0;
 	}
 	.scores span {
 		width: 30vw;

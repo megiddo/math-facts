@@ -1,0 +1,6 @@
+{
+	"appId": "ninja.mathfacts",
+	"appName": "Math Facts",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}

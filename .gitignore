@@ -111,3 +111,5 @@ node_modules
 .env
 .env.*
 !.env.example
+
+ios-app-store-exports/*
