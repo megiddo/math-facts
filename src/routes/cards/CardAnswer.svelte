@@ -29,7 +29,7 @@
 		width: 30vw;
 		height: 30vw;
 		max-height: 20vh;
-		background-color: #27f713ff;
+		background-color: #ddd;
 		border: 1px solid #000;
 		font-size: 6vh;
 		margin: 1vw;
@@ -41,7 +41,8 @@
 	}
 	.highlighted {
 		background-color: #404851ff !important;
-		color: #000;
+		color: #ce2727ff;
+		text-decoration: line-through wavy;
 	}
 	.wrongAnswer {
 		position: absolute;

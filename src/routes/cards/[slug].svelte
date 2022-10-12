@@ -53,7 +53,7 @@
 			class="home"
 			on:click={() => {
 				cardDb.Decks[$page.params.slug].correct = 0;
-				cardDb.Decks[$page.params.slug].incorrect = 0;
+				cardDb.Decks[$page.params.slug].missed = 0;
 				goto('/');
 			}}>Home</button
 		>
@@ -91,10 +91,10 @@
 		font-size: 1.5em;
 	}
 	.correct {
-		color: #404851ff;
+		color: #27ce27ff;
 	}
 	.missed {
-		color: #f72713ff;
+		color: #ce2727ff;
 	}
 	.scores {
 		position: absolute;

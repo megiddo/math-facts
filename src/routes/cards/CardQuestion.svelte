@@ -12,6 +12,6 @@
 		font-size: 10vh;
 		text-align: center;
 		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-		color: #22262aff;
+		color: #ce2727ff;
 	}
 </style>
