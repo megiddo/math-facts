@@ -47,20 +47,20 @@
 	{/each}
 </div>
 
-<div class="control">
-	<button
-		class="home"
-		on:click={() => {
-			cardDb.Decks[$page.params.slug].correct = 0;
-			cardDb.Decks[$page.params.slug].incorrect = 0;
-			goto('/');
-		}}>Home</button
-	>
-</div>
 <div class="scores">
-	<span class="correct">Correct: <br />{cardDb.Decks[$page.params.slug].correct}</span>
-	<span class="speed">Speed: <br />{390 - cardDb.Decks[$page.params.slug].cards.length}</span>
-	<span class="missed">Incorrect: <br />{cardDb.Decks[$page.params.slug].missed}</span>
+	<div class="control">
+		<button
+			class="home"
+			on:click={() => {
+				cardDb.Decks[$page.params.slug].correct = 0;
+				cardDb.Decks[$page.params.slug].missed = 0;
+				goto('/');
+			}}>Home</button
+		>
+	</div>
+	<span class="correct">&check; {cardDb.Decks[$page.params.slug].correct}</span>
+	<span class="speed">SPD: {390 - cardDb.Decks[$page.params.slug].cards.length}</span>
+	<span class="missed">&times; {cardDb.Decks[$page.params.slug].missed}</span>
 </div>
 
 <style>
@@ -68,11 +68,12 @@
 		width: 50vw;
 		font-size: 4vh;
 		margin: 1vw;
-		background-color: deepskyblue;
+		background-color: #f2f4f5ff;
+		border: 1px solid #404851ff;
 		display: block;
 		padding: 0.5em;
-		margin-bottom: 10vw;
 		color: black;
+		position: relative;
 	}
 	.answers {
 		display: flex;
@@ -90,23 +91,23 @@
 		font-size: 1.5em;
 	}
 	.correct {
-		color: forestgreen;
+		color: #27ce27ff;
 	}
 	.missed {
-		color: deeppink;
+		color: #ce2727ff;
 	}
 	.scores {
 		position: absolute;
 		bottom: 1.5vh;
 		text-align: center;
-		font-size: 1.5em;
+		font-size: 2em;
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		width: 100%;
 		margin: 0;
+		font-family: Arial, Helvetica, sans-serif;
 	}
 	.scores span {
-		width: 30vw;
 		display: block;
 		text-align: center;
 	}

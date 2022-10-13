@@ -26,16 +26,23 @@
 
 <style>
 	button {
-		width: 3em;
-		height: 3em;
-		background-color: aquamarine;
+		width: 30vw;
+		height: 30vw;
+		max-height: 20vh;
+		background-color: #ddd;
+		border: 1px solid #000;
 		font-size: 6vh;
 		margin: 1vw;
 		position: relative;
-		color: black;
+		color: #000;
+		flex-basis: 40%;
+		font-family: 'Courier New', Courier, monospace;
+		font-weight: bold;
 	}
 	.highlighted {
-		background-color: hotpink !important;
+		background-color: #404851ff !important;
+		color: #ce2727ff;
+		text-decoration: line-through wavy;
 	}
 	.wrongAnswer {
 		position: absolute;

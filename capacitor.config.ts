@@ -6,7 +6,7 @@ const config: CapacitorConfig = {
 	webDir: 'build',
 	bundledWebRuntime: false,
 	ios: {
-		path: 'Math Facts'
+		scheme: 'Math Facts'
 	}
 };
 
