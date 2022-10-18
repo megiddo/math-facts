@@ -42,6 +42,15 @@
 			alt="Division sign; click here to practice Division."
 		/>
 	</div>
+
+	<div class="app-stores">
+		<a href="https://apps.apple.com/us/app/math-facts-ninja/id6443783732"
+			><img
+				src="https://developer.apple.com/news/images/download-on-the-app-store-badge.png"
+				alt="Apple App Store"
+			/></a
+		>
+	</div>
 </div>
 
 <style>
@@ -65,5 +74,14 @@
 	#ninja-logo {
 		max-width: 300px;
 		max-height: 30vh;
+	}
+	.app-stores {
+		display: flex;
+		justify-content: center;
+		width: 100vw;
+	}
+	.app-stores img {
+		height: 8vh;
+		max-height: 40px;
 	}
 </style>
