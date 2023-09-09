@@ -4,6 +4,7 @@
 	const subtractionUrl = new URL('./assets/math facts subtraction.svg', import.meta.url).href;
 	const multiplicationUrl = new URL('./assets/math facts multiplication.svg', import.meta.url).href;
 	const divisionUrl = new URL('./assets/math facts division.svg', import.meta.url).href;
+	const fractionsUrl = new URL('./assets/math facts fractions.svg', import.meta.url).href;
 
 	const mathFactsNinja = new URL('./assets/math facts logo.svg', import.meta.url).href;
 
@@ -40,6 +41,14 @@
 			on:click={() => goto('cards/Division')}
 			src={divisionUrl}
 			alt="Division sign; click here to practice Division."
+		/>
+
+
+		<input
+			type="image"
+			on:click={() => goto('cards/Fractions')}
+			src={fractionsUrl}
+			alt="Fraction sign; click here to practice Fractions."
 		/>
 	</div>
 

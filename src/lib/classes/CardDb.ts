@@ -3,7 +3,8 @@ import {
 	MultiplicationCard,
 	DivisionCard,
 	SubtractionCard,
-	AdditionCard
+	AdditionCard,
+	FractionsCard
 } from '$lib/classes/Cards';
 import { Deck } from '$lib/classes/Deck';
 
@@ -39,6 +40,8 @@ export class CardDb {
 				this.Decks[CardModes.Subtraction].insert(
 					SubtractionCard.buildCard(i, j, lscores[CardModes.Subtraction][s])
 				);
+				const fcard = FractionsCard.buildCard(i, j, lscores[CardModes.Fractions][s]);
+				if (fcard) this.Decks[CardModes.Fractions].insert(fcard);
 				s++;
 			}
 		}
