@@ -73,6 +73,7 @@ npx cap add ios
 Build in dev container
 
 ```
+npm install
 npm run build
 ```
 
