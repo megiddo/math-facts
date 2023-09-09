@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="34.149761mm"
+   height="34.149761mm"
+   viewBox="0 0 34.149761 34.149761"
+   version="1.1"
+   id="svg7283"
+   inkscape:version="1.2.2 (b0a8486, 2022-12-01)"
+   sodipodi:docname="math facts fractions.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7285"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.914906"
+     inkscape:cx="248.11292"
+     inkscape:cy="132.25402"
+     inkscape:window-width="1454"
+     inkscape:window-height="916"
+     inkscape:window-x="58"
+     inkscape:window-y="38"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs7280" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-0.44287555,-159.8534)">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       id="rect6529-6-9"
+       width="34.149761"
+       height="34.149761"
+       x="0.44287556"
+       y="159.85339" />
+    <circle
+       style="fill:#ce2727;fill-opacity:1;stroke:none;stroke-width:1.21739"
+       id="path489"
+       cx="8.3002691"
+       cy="167.95079"
+       r="4.0486856" />
+    <rect
+       style="fill:#ce2727;fill-opacity:1;stroke:none;stroke-width:1.16037"
+       id="rect543"
+       width="26.845671"
+       height="5.7047052"
+       x="98.886292"
+       y="132.10266"
+       transform="matrix(-0.70710678,0.70710678,0.70710678,0.70710678,0,0)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:27.4849px;line-height:0.8;font-family:Aharoni;-inkscape-font-specification:'Aharoni, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ce2727;fill-opacity:1;stroke:none;stroke-width:0.509782"
+       x="18.028664"
+       y="191.62042"
+       id="text599"><tspan
+         sodipodi:role="line"
+         id="tspan597"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:27.4849px;font-family:Aharoni;-inkscape-font-specification:'Aharoni, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ce2727;fill-opacity:1;stroke:none;stroke-width:0.509782"
+         x="18.028664"
+         y="191.62042">n</tspan></text>
+  </g>
+</svg>
