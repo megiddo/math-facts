@@ -4,6 +4,7 @@
 	"scripts": {
 		"dev": "vite dev --port 5173 --host 0.0.0.0",
 		"build": "vite build",
+		"build-site": "ENVIROMENT=SITE vite build",
 		"package": "svelte-kit package",
 		"preview": "vite preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
@@ -36,6 +37,7 @@
 		"@capacitor/assets": "^1.0.10",
 		"@capacitor/core": "^4.3.0",
 		"@capacitor/ios": "^4.3.0",
-		"cordova-res": "^0.15.4"
+		"cordova-res": "^0.15.4",
+		"dotenv": "^8.6.0"
 	}
 }

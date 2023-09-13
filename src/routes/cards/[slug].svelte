@@ -54,7 +54,7 @@
 			on:click={() => {
 				cardDb.Decks[$page.params.slug].correct = 0;
 				cardDb.Decks[$page.params.slug].missed = 0;
-				goto('/play/');
+				goto('../');
 			}}>Home</button
 		>
 	</div>
